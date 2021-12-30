@@ -1,20 +1,5 @@
 server:
-  port: 8070
-
-##日志路径
-logging:
-  file:
-    path: /usr/logs/
-  level:
-    root: info
-    com.xuanwu.r_friend.app.mapper: debug
-    com.xuanwu.r_friend.deliver.mapper: debug
-    com.xuanwu.r_friend.deliver.feign.FeignFDD: debug
-
-
-## 文件保存路径
-file:
-      path: /app/log/
+  port: 8080
 
 spring:
   profiles:
