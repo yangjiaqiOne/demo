@@ -1,0 +1,64 @@
+server:
+  port: 8070
+
+##日志路径
+logging:
+  file:
+    path: /usr/logs/
+  level:
+    root: info
+    com.xuanwu.r_friend.app.mapper: debug
+    com.xuanwu.r_friend.deliver.mapper: debug
+    com.xuanwu.r_friend.deliver.feign.FeignFDD: debug
+
+
+## 文件保存路径
+file:
+      path: /app/log/
+
+spring:
+  profiles:
+    active: dev
+  application:
+    name: rfriend
+  jackson:
+    time-zone: GMT+8
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+  #  mvc:
+#    throw-exception-if-no-handler-found: true
+#  resources:
+#    add-mappings: false
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.zaxxer.hikari.HikariDataSource
+    cachePrepStmts: true
+    prepStmtCacheSize: 300
+    prepStmtCacheSqlLimit: 2048
+    useServerPrepStmts: true
+    useLocalSessionState: true
+    rewriteBatchedStatements: true
+    cacheResultSetMetadata: true
+    cacheServerConfiguration: true
+    elideSetAutoCommits: true
+    maintainTimeStats: false
+    hikari:
+      minimum-idle: 10
+      maximum-pool-size: 20
+      idle-timeout: 10000
+      max-lifetime: 1800000
+      connection-timeout: 30000
+
+
+
+
+
+logbook:
+  write:
+    level: debug
+  format:
+    style: curl
+
+
