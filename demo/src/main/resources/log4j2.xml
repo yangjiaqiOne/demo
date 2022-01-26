@@ -11,7 +11,7 @@
         <property name="LOG_PATTERN" value="%date{MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n" />
         <!-- 定义日志存储的路径 -->
         <property name="LOG_PATH" value="${sys:LOG_PATH}" />
-        <property name="FILE_NAME" value="rfriend" />
+        <property name="FILE_NAME" value="rf" />
 
     </Properties>
 

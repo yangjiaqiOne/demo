@@ -15,7 +15,7 @@ spring:
 
 logging:
   file:
-    path: "./log/${spring.application.name}"
+    path: "/opt/work/${spring.application.name}"
 
 
 

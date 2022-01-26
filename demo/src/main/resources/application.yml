@@ -1,11 +1,15 @@
 server:
   port: 8080
 
+## 文件保存路径
+file:
+  path: /app/log/
+
 spring:
   profiles:
     active: dev
   application:
-    name: rfriend
+    name: rf
   jackson:
     time-zone: GMT+8
   servlet:
